@@ -60,6 +60,12 @@
                   "maximumError": "4kb"
                 }
               ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "outputHashing": "all"
             },
             "development": {
@@ -106,6 +112,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "task04:build:production",
+              "serveTarget": "task04:serve:production"
+            },
+            "development": {
+              "buildTarget": "task04:build:development",
+              "serveTarget": "task04:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

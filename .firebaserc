@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "fir-demo-project": {
+      "hosting": {
+        "task04": [
+          "fir-demo-project"
+        ]
+      }
+    },
+    "fir-9e793": {
+      "hosting": {
+        "task04": [
+          "fir-9e793"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-9e793"
+  }
+}

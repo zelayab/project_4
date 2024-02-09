@@ -1,0 +1,10 @@
+<button (click)="addUser()">Add user</button>
+
+<div *ngIf="users.length > 0">
+  <div *ngFor="let user of users">
+    <p>id:{{ user.id }}</p>
+    <button (click)="updateUser(user)">Update user info</button>
+    <button (click)="getUserById(user.id)">See user name</button>
+    <button (click)="deleteUser(user.id)">Delete user</button>
+  </div>
+</div>
